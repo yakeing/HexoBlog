@@ -1,0 +1,44 @@
+name: page
+
+on:
+  push:
+    paths:
+    - mami
+    - source/*
+    - source/*/*
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout master branch
+        uses: actions/checkout@master
+        with:
+          fetch-depth: 1
+
+      - name: Setup nodejs
+        uses: dcodeIO/setup-node-nvm@v2.0.0
+        with:
+          node-version: lts/*
+
+      - name: Dependency install
+        run: |
+          # npm install -g cnpm --registry=https://registry.npm.taobao.org
+          npm install -g cnpm
+          cnpm install -g hexo-cli
+          cnpm install
+          cnpm install
+
+      - name: Clean And Regenerate
+        run: |
+          ./node_modules/.bin/hexo clean
+          ./node_modules/.bin/hexo generate
+
+      - name: Deploy
+        env:
+          PERSONAL_TOKEN: ${{secrets.ACCESS_TOKEN}}
+        run: |
+          git config --global user.name "yakeing"
+          git config --global user.email "yakeing@users.noreply.github.com"
+          sed -i "s/gh_token/${PERSONAL_TOKEN}/g" ./_config.yml
+          ./node_modules/.bin/hexo deploy
