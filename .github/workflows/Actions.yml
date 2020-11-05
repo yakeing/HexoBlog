@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout master branch
-        uses: actions/checkout@master
+        uses: actions/checkout@main
         with:
           fetch-depth: 1
 
