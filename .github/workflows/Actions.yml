@@ -12,12 +12,12 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout main branch
-        uses: actions/checkout@v2
+        uses: actions/checkout@main
         #with:
           #fetch-depth: 1
 
       - name: Setup nodejs
-        uses: dcodeIO/setup-node-nvm@v2.0.0
+        uses: dcodeIO/setup-node-nvm@v3.0.0
         with:
           node-version: lts/*
 
