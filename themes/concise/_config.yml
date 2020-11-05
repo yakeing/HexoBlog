@@ -26,6 +26,10 @@ links:
   - svg: /svg/twitter.svg
     url: https://twitter.com/yakeing
 
+# github comment
+git_commit:
+  enable: true
+
 # 百度统计
 baidu:
   id: 7655bbc8fe60302eb3ff0108b4652744
