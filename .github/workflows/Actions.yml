@@ -3,7 +3,7 @@ name: page
 on:
   push:
     paths:
-    - mami
+    - main
     - source/*
     - source/*/*
 
