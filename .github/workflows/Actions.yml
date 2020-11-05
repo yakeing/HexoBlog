@@ -13,8 +13,8 @@ jobs:
     steps:
       - name: Checkout main branch
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 1
+        #with:
+          #fetch-depth: 1
 
       - name: Setup nodejs
         uses: dcodeIO/setup-node-nvm@v2.0.0
