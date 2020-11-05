@@ -1,0 +1,14 @@
+<footer class="footer">
+    <p>&copy;<%- date(Date.now(), 'YYYY') %> <i class="icon-heart heart vm"></i> <b><%= config.author %></b> | <%= _p('powered_by', 'Hexo') %> | <%= __('theme_by') %>: Concise </p>
+    <% if( theme.baidu && theme.baidu.id ) { %>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?<%= theme.baidu.id %>";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <% } %>
+</footer>

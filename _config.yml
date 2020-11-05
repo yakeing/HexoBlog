@@ -1,0 +1,96 @@
+## Docs: https://hexo.io/docs/configuration.html
+
+# 网站
+title: Yakeing Blog # 网站标题
+subtitle: 传播知识,分享快乐,交流技术与经验 # 副标题
+description: 传播知识,分享快乐,交流技术与经验 # 描述
+keywords: 网站,程序员,技术 # 关键词
+author: Yakeing # 作者
+language: zh-CN # 语言
+timezone: UTC # 时区
+
+# 网址
+url: https://yake.js.org # 网址
+root: / # 网站根目录
+permalink: :category/:abbrlink.html # 文章的 :year/:month/:day/:title/ 永久链接 格式 [hexo-abbrlink]
+permalink_defaults: #永久链接中各部分的默认值
+
+# 目录
+source_dir: source # 资源文件夹
+public_dir: public # 公共文件夹
+tag_dir: tags # 标签文件夹
+archive_dir: archives # 归档文件夹
+category_dir: categories # 分类文件夹
+code_dir: downloads/code # Include code 文件夹，source_dir 下的子目录
+i18n_dir: :lang # 国际化（i18n）文件夹
+skip_render: # 跳过指定文件的渲染
+
+# 文章
+new_post_name: :title.md # 新文章的文件名称
+default_layout: post # 预设布局
+# auto_spacing: false # 在中文和英文之间加入空格
+titlecase: false # 把标题转换为 title case
+external_link: true # 在新标签中打开链接
+filename_case: 0 # 把文件名称转换为 (1) 小写或 (2) 大写
+render_drafts: false # 显示草稿
+post_asset_folder: false # 启动 Asset 文件夹 https://hexo.io/zh-cn/docs/asset-folders
+relative_link: false # 把链接改为与根目录的相对位址
+future: true # 显示未来的文章
+highlight: # 代码块的设置
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+
+# 主页设置
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# 分类 & 标签
+default_category: default # 默认分类
+category_map: # 分类别名
+  默认: default
+  编程: programming
+  生活: life
+tag_map: # 标签别名
+  代码: code
+  百度: baidu
+  谷歌: google
+  博客: blog
+
+# 时间与日期格式
+date_format: YYYY-MM-DD # 日期格式
+time_format: HH:mm:ss # 时间格式
+
+# 分页
+per_page: 10 # 每页显示的文章量
+pagination_dir: page # 分页目录
+
+# 扩展
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: concise #网站主题
+# theme_config: _config.yml #主题的配置文件
+# meta_generator: false # Meta generator 标签 值为 false 时 Hexo 不会在头部插入该标签
+
+# 自动部署
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: https://gh_token@github.com/yakeing/HexoBlog.git
+  branch: gh-pages
+  message: Auto update
+
+# 路径插件
+abbrlink:
+  alg: crc32 # 算法：crc16(default) and crc32
+  rep: hex # 进制：dec(default) and hex
+
+# 目录和文件
+# include # 包括,复制到 source 目录下
+# exclude # 不包括
