@@ -17,11 +17,6 @@ jobs:
           #fetch-depth: 1
 
       - name: Setup nodejs
-        uses: dcodeIO/setup-node-nvm@v2
-        with:
-          node-version: lts/*
-
-      - name: Setup nodejs
         uses: actions/setup-node@v1
         with:
           node-version: '10.x'
@@ -31,7 +26,7 @@ jobs:
         run: |
           ./node_modules/.bin/hexo clean
           ./node_modules/.bin/hexo generate
-          
+
       - name: Configuration environment
         run: |
           sudo timedatectl set-timezone "Asia/Shanghai"
@@ -39,7 +34,7 @@ jobs:
           # npm uninstall hexo-renderer-stylus --save
           npm install --ignore-scripts
           npm rebuild && npm run prepare --if-present
-          
+
       - name: Deploy
         env:
           PERSONAL_TOKEN: ${{secrets.ACTIONS_TOKEN}}
