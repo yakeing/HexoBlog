@@ -22,11 +22,6 @@ jobs:
           node-version: '10.x'
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Clean And Regenerate
-        run: |
-          ./node_modules/.bin/hexo clean
-          ./node_modules/.bin/hexo generate
-
       - name: Configuration environment
         run: |
           sudo timedatectl set-timezone "Asia/Shanghai"
