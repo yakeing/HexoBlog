@@ -1,7 +1,14 @@
 <aside id="aside" class="aside">
     <div id="aside-mask" class="aside-mask"></div>
     <div id="aside-inner" class="aside-inner">
-        <%- search_form({button: '<i class="icon-search-stroke"></i>'}) %>
+    <!-- %- search_form({button: '<i class="icon-search-stroke"></i>'}) % -->
+    <form action="http://zhannei.baidu.com/cse/site" method="get" target="_blank" accept-charset="UTF-8" class="search-form">
+      <input type="search" name="q" class="search-form-input" placeholder="Search">
+      <button type="submit" class="search-form-submit">
+        <i class="icon-search-stroke"></i>
+      </button>
+      <input type="hidden" name="cc" value="yake.js.org">
+    </form>
         <% var t = null %>
         <% if( is_post() ) { %>
         <% t = toc(page.content) %>
