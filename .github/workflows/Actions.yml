@@ -17,7 +17,7 @@ jobs:
           #fetch-depth: 1
 
       - name: Setup nodejs
-        uses: dcodeIO/setup-node-nvm@v3.0.0
+        uses: dcodeIO/setup-node-nvm@v2
         with:
           node-version: lts/*
 
