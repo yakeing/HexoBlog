@@ -23,7 +23,7 @@ abbrlink: ja7eO
 
 ### 为什么会有这么多的 hello world 呢?
 
-1978年, Brain Kernighan 在他和 Dennis Ritchie 合作撰写的C语言圣经 The C Programming Language 中，延用了 `hello,world` 句式，作为开篇第一个程序。在这个程序里，输出的 `hello world` 代码
+1978年, Brain Kernighan 在他和 Dennis Ritchie 合作撰写的C语言圣经 The C Programming Language 中，延用了 `hello,world` 句式，作为开篇第一个程序。在这个程序里，输出的 `hello world` 代码.
 
 ```c
     #include <stdio.h>int main(){
