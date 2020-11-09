@@ -1,0 +1,40 @@
+name: page
+
+on:
+  push:
+    paths:
+    - main
+    - source/*
+    - source/*/*
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@main
+        #with:
+          #fetch-depth: 1
+
+      - name: Setup nodejs
+        uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Configuration environment
+        run: |
+          sudo timedatectl set-timezone "Asia/Shanghai"
+          npm install hexo-renderer-less --save
+          # npm uninstall hexo-renderer-stylus --save
+          npm install --ignore-scripts
+          npm rebuild && npm run prepare --if-present
+
+      - name: Deploy
+        env:
+          PERSONAL_TOKEN: ${{secrets.ACTIONS_TOKEN}}
+        run: |
+          git config --global user.name "yakeing"
+          git config --global user.email "yakeing@users.noreply.github.com"
+          sed -i "s/gh_token/${PERSONAL_TOKEN}/g" ./_config.yml
+          ./node_modules/.bin/hexo deploy

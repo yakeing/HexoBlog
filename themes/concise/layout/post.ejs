@@ -1,0 +1,9 @@
+<%- partial('_partial/article', {post: page, view: true}) %>
+
+<% if( theme.adsense ) { %>
+<%- partial('_partial/adsense', {post: page}) %>
+<% } %>
+
+<% if( theme.git_commit.enable && page.comments ) { %>
+<%- partial('_partial/comments', {post: page}) %>
+<% } %>
