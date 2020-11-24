@@ -12,6 +12,7 @@ abbrlink:
 
 在第十一届中国卫星导航年会上，我国卫星导航领域首家上市公司北斗星通发布了代表目前国内卫星定位芯片最高水平的“中国芯”，22纳米级北斗高精度定位芯片——和芯星云NebulasⅣ，其定位精度已可达到厘米级。
 
+![img](https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/c71b-kcieyvz7683475.jpg)
 
 它支持全球所有卫星导航系统和频点，将是一颗在国际市场更“能打”的高性能芯片，有望助推基于北斗的各类应用加速走向全球。
 

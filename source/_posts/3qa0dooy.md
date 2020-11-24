@@ -12,8 +12,6 @@ abbrlink:
 
 ![img](https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/e77a-kcieywa1863300.png)
 
-　　中国网评论员唐华
-
 　　作为最早与新中国建交的西方国家，瑞典近年来却在反华排华的歧途上一意孤行。
 
 　　11月10日，瑞典5g频谱将正式拍卖。但上月20日，瑞典邮政和电信管理局就已宣布，禁止该国参与竞拍的电信企业使用华为或中兴公司的5g设备，正在使用的，必须在2025年初之前完成更换。
