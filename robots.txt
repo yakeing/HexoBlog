@@ -1,0 +1,12 @@
+# hexo Robots.txt
+User-agent: *
+Allow: /
+Allow: /archives/
+
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /images/
+Disallow: /js/
+Disallow: /svg/
+
+Sitemap: https://yake.js.org/atom.xml

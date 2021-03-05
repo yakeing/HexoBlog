@@ -1,0 +1,17 @@
+.footer {
+  height: 40px;
+  margin-left: 380px;
+  line-height: 40px;
+  color: #999;
+  text-align: center;
+  font-size: 13px;
+}
+.footer a {
+  color: #999;
+  text-decoration: underline;
+}
+@media screen and (max-width: 960px) {
+  .footer {
+    margin-left: 0;
+  }
+}
