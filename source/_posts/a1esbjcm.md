@@ -12,8 +12,6 @@ abbrlink:
 
 ![img](https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/2489-iyywcsz0009820.jpg)
 
-　　作者 李昊原
-
 　　华为将卖掉荣耀的传闻，就像草原上的野火，在科技圈焦虑的气氛里灼烧传播。
 
 　　天风证券的分析师郭明錤是点火之人，他在研报中对华为卖掉荣耀给出了三个理由：荣耀独立后采购零部件将不受美国禁令限制;能最大程度保有荣耀的品牌;荣耀有望从中低端机型向高端机型发展。

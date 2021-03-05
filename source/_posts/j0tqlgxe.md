@@ -25,7 +25,6 @@ abbrlink:
 　　HI品牌代表华为智能汽车解决方案（HUAWEI Intelligent Automotive Solution），王军认为HI品牌既是华为在智能汽车领域的技术创新，也是一种商业模式的创新。
 
 ![img](https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/092a-kcieyvz5604502.png)
-图片来源：企业供图
 
 　　据了解，HI全栈智能汽车解决方案包括1个全新的计算与通信架构和5大智能系统：智能驾驶、智能座舱、智能电动、智能网联和智能车云，以及激光雷达、AR-HUD等全套的智能化部件。
 
@@ -48,7 +47,6 @@ abbrlink:
 　　时间来到2018年，华为战略部门宣布车联网将会成为华为的战略重点。在2019年，华为则正式发布其过渡阶段解决方案HiCar系统，并正式成立智能汽车解决方案BU，进一步明确了自身的定位和业务边界。
 
 ![img](https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/23be-kcieyvz5604792.png)
-图片来源：每日经济新闻（资料图）
 
 　　今年8月，华为公布了三大鸿蒙车载OS系统。今年9月，华为电动技术有限公司成立，主要业务为车载智能设备的研究及制造。在今年10月初举办的智能汽车解决方案生态论坛上，华为宣布在2020年已对华为汽车BU投入超过5亿美元（约合人民币34亿元）。
 

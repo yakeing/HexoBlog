@@ -11,9 +11,6 @@ abbrlink:
 ---
 
 ![img](https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/8b13-kcieywa2696040.jpg)
-图片来源：视觉中国
-
-　　文／陆柯言
 
 　　上周五，华为如期在上海东方体育中心举办了Mate40的国内发布会。
 
