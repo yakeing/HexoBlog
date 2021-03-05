@@ -2,8 +2,6 @@
 title: OWC发布便携式USB-C固态硬盘Envoy Pro
 date: 2020-11-08T18:25:32+08:00
 tags:
-  - USB-C
-  - OWC
   - 固态硬盘
 categories:
   - 互联网

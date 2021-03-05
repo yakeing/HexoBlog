@@ -2,7 +2,7 @@
 title: LG Velvet在印度发布 骁龙845+48MP三摄约售3360元
 date: 2020-11-08T18:25:32+08:00
 tags:
-  - 骁龙845
+  - 骁龙
   - 印度
   - LG
 categories:

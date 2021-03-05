@@ -4,7 +4,7 @@ date: 2020-11-09T11:50:02+08:00
 tags:
   - iPhone12
   - 华尔街
-  - 5g网络
+  - 5G网络
 categories:
   - 互联网
 abbrlink:

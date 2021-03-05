@@ -4,7 +4,6 @@ date: 2020-11-08T18:25:32+08:00
 tags:
   - 红米
   - 面板
-  - LCD
 categories:
   - 手机
 abbrlink:

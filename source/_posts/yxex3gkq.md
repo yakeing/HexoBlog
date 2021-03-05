@@ -2,9 +2,8 @@
 title: 蚂蚁做错了什么？
 date: 2020-11-09T11:50:02+08:00
 tags:
-  - 阿里巴巴
+  - 阿里
   - 余额宝
-  - 阿里小贷
 categories:
   - 电商
 abbrlink:

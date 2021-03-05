@@ -2,8 +2,7 @@
 title: 一家通吃？传阿里巴巴投资Farfetch近3亿美元
 date: 2020-11-07T13:20:52+08:00
 tags:
-  - 阿里巴巴
-  - Farfetch
+  - 阿里
 categories:
   - 互联网
 abbrlink:

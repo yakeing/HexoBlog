@@ -3,7 +3,7 @@ title: 10000PPI：三星和斯坦福联合开发出迄今最精细OLED屏
 date: 2020-11-09T11:50:02+08:00
 tags:
   - 三星
-  - OLED显示屏
+  - OLED
 categories:
   - 手机
 abbrlink:

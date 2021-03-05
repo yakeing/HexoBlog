@@ -3,7 +3,7 @@ title: 蚂蚁集团据称计划在周三结束香港IPO的申购
 date: 2020-11-09T11:50:02+08:00
 tags:
   - 蚂蚁集团
-  - 香港IPO
+  - 香港
 categories:
   - 电商
 abbrlink:

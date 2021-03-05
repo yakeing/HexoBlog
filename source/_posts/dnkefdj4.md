@@ -3,7 +3,6 @@ title: 坚果R2浅黑/松绿现货开售 1亿像素+90Hz屏4499元起
 date: 2020-11-07T13:20:52+08:00
 tags:
   - 坚果
-  - 1亿像素
 categories:
   - 手机
 abbrlink:

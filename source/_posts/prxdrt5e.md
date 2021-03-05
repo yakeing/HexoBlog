@@ -3,7 +3,6 @@ title: 诺基亚10 PureView爆料：用上骁龙875
 date: 2020-11-08T18:25:32+08:00
 tags:
   - 诺基亚
-  - 10 PureView
 categories:
   - 手机
 abbrlink:

@@ -3,8 +3,6 @@ title: 周杰伦持股的KTV，被音集协告了！因播放了《彩虹》等�
 date: 2020-11-08T18:25:32+08:00
 tags:
   - 著作权
-  - 周杰伦
-  - KTV
 categories:
   - 新闻
 abbrlink:

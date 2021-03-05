@@ -2,7 +2,7 @@
 title: Paypal与域名注册商Epik因数字货币问题终止合作
 date: 2020-11-08T18:25:32+08:00
 tags:
-  - Paypal
+  - PayPal
 categories:
   - 新闻
 abbrlink:

@@ -2,8 +2,8 @@
 title: Redmi K30S至尊版不止配骁龙865：LPDDR5内存+UFS 3.1全有
 date: 2020-11-09T11:50:02+08:00
 tags:
-  - 144Hz
-  - 骁龙865
+  - 小米
+  - 骁龙
   - Redmi
 categories:
   - 手机

@@ -3,7 +3,7 @@ title: 骁龙875超大杯！三星Galaxy S21 Ultra或进入量产阶段
 date: 2020-11-09T18:10:02+08:00
 tags:
   - 芯片
-  - 骁龙875
+  - 骁龙
   - 三星
 categories:
   - 新闻
