@@ -23,7 +23,7 @@ abbrlink:
 
 　　C：\Program Files\Microsoft\Edge\Application\[VERSION]\BHO\
 
-　　C：\Program Files （x86）\Microsoft\Edge\Application\[VERSION]\BHO\
+　　C：\Program Files(x86)\Microsoft\Edge\Application\[VERSION]\BHO\
 
 　　尽管BHO文件藏在Edge目录下，但用户每次试图打开IE时就会在注册表中加载。
 
