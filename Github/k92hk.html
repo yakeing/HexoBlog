@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta name="baidu-site-verification" content="Y3O25eZaLD">
+    <meta charset="UTF-8">
+    <title>使用hugo+Github博客搭建教程 | Yakeing Blog</title>
+    <meta name="author" content="Yakeing">
+    <meta name="version" content="1.0.0">
+    <meta name="keywords" content="网站,程序员,技术">
+    <meta name="description" content="什么是hugoHugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。对比Hexo，Hugo仅需一个二进制文件（hugo.exe）即可实现网站生成的生成。而且就如它官网介绍：The world’s fastest framework for building websites。Hugo是目前最快的网站构建框架。凭借其惊人的速度和灵活性，解决了环境依赖、性能较差的问题，还有使用简单、部署方便等诸多优点，通过 LiveReload 实时刷新，极大的优化文章的写作体验。Hu...">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <!-- Referrer Policy -策略- HTTPS降为HTTP请求不发送地址 -->
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <!-- -跨域资源共享- 允许请求域名 有效时间 发送cookie 请求方式 自定义请求头字段 -->
+  <meta name="Access-Control-Allow-Origin" content="*">
+  <meta name="Access-Control-Max-Age" content="1728000">
+  <meta name="Access-Control-Allow-Credentials" content="true">
+  <meta name="Access-Control-Request-Method" content="OPTIONS, GET, PUT, POST, DELETE">
+  <meta name="Access-Control-Allow-Headers" content="x-requested-with, accept, origin, content-type">
+    <link rel="alternate" href="/atom.xml" title="Yakeing Blog" type="application/atom+xml">
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+    <main class="app">
+        <header class="header clearfix">
+    <div id="nav" class="nav">
+    <div class="nav-mobile">
+        <button id="open-panel" class="open-panel nav-mobile-item"><i class="icon-documents"></i></button>
+        <h1 class="nav-mobile-title nav-mobile-item">Yakeing Blog</h1>
+        <button id="open-menus" class="open-panel nav-mobile-item"><i class="icon-library"></i></button>
+    </div>
+
+    <nav id="nav-inner" class="nav-inner">
+        
+            <a class="nav-item" href="/">
+                <span class="nav-text">首页</span>
+            </a>
+        
+            <a class="nav-item" href="/tags">
+                <span class="nav-text">标签</span>
+            </a>
+        
+            <a class="nav-item" href="/categories">
+                <span class="nav-text">分类</span>
+            </a>
+        
+            <a class="nav-item" href="/archives">
+                <span class="nav-text">归档</span>
+            </a>
+        
+            <a class="nav-item" href="/about">
+                <span class="nav-text">关于</span>
+            </a>
+        
+            <a class="nav-item" href="/atom.xml">
+                <span class="nav-text">RSS</span>
+            </a>
+        
+    </nav>
+</div>
+
+    <aside id="aside" class="aside">
+    <div id="aside-mask" class="aside-mask"></div>
+    <div id="aside-inner" class="aside-inner">
+    <!-- %- search_form({button: '<i class="icon-search-stroke"></i>'}) % -->
+    <form action="http://zhannei.baidu.com/cse/site" method="get" target="_blank" accept-charset="UTF-8" class="search-form">
+      <input type="search" name="q" class="search-form-input" placeholder="Search">
+      <button type="submit" class="search-form-submit">
+        <i class="icon-search-stroke"></i>
+      </button>
+      <input type="hidden" name="cc" value="yake.js.org">
+    </form>
+        
+        
+        
+        
+        
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#什么是hugo"><span class="toc-number">1.</span> <span class="toc-text">什么是hugo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#hugo能做什么"><span class="toc-number">2.</span> <span class="toc-text">hugo能做什么</span></a></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#开始使用hugo"><span class="toc-number"></span> <span class="toc-text">开始使用hugo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#下载安装hugo"><span class="toc-number">1.</span> <span class="toc-text">下载安装hugo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#hugo环境变量配置"><span class="toc-number">2.</span> <span class="toc-text">hugo环境变量配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#hugo新建博客"><span class="toc-number">3.</span> <span class="toc-text">hugo新建博客</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#hugo安装主题"><span class="toc-number">4.</span> <span class="toc-text">hugo安装主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置主题"><span class="toc-number">5.</span> <span class="toc-text">配置主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#The-End"><span class="toc-number">6.</span> <span class="toc-text">The End</span></a></li></ol>
+        
+    </li></div>
+</aside>
+
+</header>
+
+        <div id="content" class="content"><article class="article" itemscope itemprop="blogPost">
+  
+  <header class="article-header">
+    
+    <h1 itemprop="name">
+      使用hugo+Github博客搭建教程
+    </h1>
+    
+    <div class="article-meta clearfix">
+      <a class="article-date" href="https://yake.js.org/Github/k92hk.html">
+    
+    <i class="icon-calendar"></i>
+    
+    <time datetime="2020-09-02T17:20:00.000Z" itemprop="datePublished">2020-09-02</time>
+</a>
+
+      
+<div class="article-tag-list">
+    <i class="icon-tag"></i>
+    <a class="article-tag-link" href="/tags/Blog/">Blog</a>, <a class="article-tag-link" href="/tags/Hugo/">Hugo</a>
+</div>
+
+
+    </div>
+  </header>
+  
+  <section class="article-body markdown-body">
+    
+      
+      
+        <h3 id="什么是hugo"><a href="#什么是hugo" class="headerlink" title="什么是hugo"></a>什么是hugo</h3><p>Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。对比Hexo，Hugo仅需一个二进制文件（hugo.exe）即可实现网站生成的生成。而且就如它官网介绍：<code>The world’s fastest framework for building websites</code>。Hugo是目前最快的网站构建框架。凭借其惊人的速度和灵活性，解决了环境依赖、性能较差的问题，还有使用简单、部署方便等诸多优点，通过 <code>LiveReload</code> 实时刷新，极大的优化文章的写作体验。Hugo使建站再次变得有趣。</p>
+<h3 id="hugo能做什么"><a href="#hugo能做什么" class="headerlink" title="hugo能做什么"></a>hugo能做什么</h3><p>hugo是静态网站生成器，能够作为一些展示类网站的解决方案。比如个人博客、产品介绍、个人作品展示、文档介绍、公司官网等等。再加上<code>Github Pages</code>的功能，就能不花一分钱建一个自己的网站了。</p>
+<a id="more"></a>
+
+<h1 id="开始使用hugo"><a href="#开始使用hugo" class="headerlink" title="开始使用hugo"></a>开始使用hugo</h1><hr>
+<h3 id="下载安装hugo"><a href="#下载安装hugo" class="headerlink" title="下载安装hugo"></a>下载安装hugo</h3><p>我们为了简便快速当然选择hugo的二进制安装方式，源码安装有机会再去学习。</p>
+<p>去hugo的官方 <a href="https://Github.com/gohugoio/hugo/releases" target="_blank" rel="noopener">Github仓库</a> 下载对应的操作系统版本的Hugo二进制文件:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hugo_*.**.*_Windows-32bit.zip   12.7 MB (系统是32位)</span><br><span class="line">hugo_*.**.*_Windows-64bit.zip   13.8 MB (系统是64位)</span><br></pre></td></tr></table></figure>
+
+<p>注意: <code>*号是版本号</code></p>
+<p>博主以<code>windows64</code>位操作系统为例，下载对应的Windows-64bit.zip，下载完成后解压缩得到文件。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hugo.exe    22.67 MB</span><br><span class="line">LICENSE     0.01 MB</span><br><span class="line">README.md   0.01 MB</span><br></pre></td></tr></table></figure>
+
+<p>苹果 <code>Mac</code> 下直接使用<code>Homebrew</code>安装：(其他步骤同理略)</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install hugo</span><br></pre></td></tr></table></figure>
+
+<h3 id="hugo环境变量配置"><a href="#hugo环境变量配置" class="headerlink" title="hugo环境变量配置"></a>hugo环境变量配置</h3><p>上一步操作，可以看到我们把<code>hugo.exe</code>解压到了<code>D:\hugo</code>下面。所以<code>hugo</code>命令只能在该目录下才能识别。但是我们想要把博客目录建到其他目录下，这就需要配置环境变量。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">此电脑-&gt;右键-&gt;点击属性-&gt;再点击高级系统设置-&gt;点击环境变量-&gt;在系统变量中找到path-&gt;再点击编辑</span><br></pre></td></tr></table></figure>
+
+<p>点击新建，填入<code>hugo</code>解压的文件目录，比如博主解压在 <code>D:\hugo</code> 就填的是 <code>D:\hugo</code> 就可以了.</p>
+<p>注意：<code>win10</code>以下系统界面不一样，比如<code>win7</code>，直接在path最前或最后加入地址就行，注意用英文;分号分割开，不会的小白可以问度娘。<br>配置好后点击确定，然后打开<code>cmd</code>命令行程序就可以在任意位置使用hugo命令了。</p>
+<h3 id="hugo新建博客"><a href="#hugo新建博客" class="headerlink" title="hugo新建博客"></a>hugo新建博客</h3><p>win+R键打开运行框，输入cmd打开命令行。</p>
+<p>使用如下命令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hugo new site /path/to/site</span><br></pre></td></tr></table></figure>
+
+<p>比如 <code>hugo new site E:/hugo/hojunBlog</code> 就在E盘hugo文件夹下新建了一个叫 <code>hojunBlog</code> 的hugo站点。</p>
+<p>hugo新建页面和文章<br>新建一个<code>links</code>页面：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hugo new links.md</span><br></pre></td></tr></table></figure>
+
+<p>links.md 自动生成到了 <code>content/links.md</code> 内容如下</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">   ---*</span><br><span class="line">*</span><br><span class="line"></span><br><span class="line">   title: "Links"</span><br><span class="line">   date: 2020-09-02T23:35:53+08:00</span><br><span class="line">   draft: true</span><br><span class="line">   ---*</span><br><span class="line">*</span><br></pre></td></tr></table></figure>
+
+<p>创建第一篇文章，放到 <code>post</code> 目录，方便之后生成聚合页面。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hugo new post/myfirst.md</span><br></pre></td></tr></table></figure>
+
+<p>links.md 自动生成到了 <code>content/post/myfirst.md</code> 内容如下:(注意这里需要把draft删除掉，不然正式生产的时候不会生成文章，因为draft是草稿)</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">   ---*</span><br><span class="line">*</span><br><span class="line"></span><br><span class="line">   title: "Myfirst"</span><br><span class="line">   date: 2020-09-02T23:23:34+08:00</span><br><span class="line">   draft: true</span><br><span class="line">   ---*</span><br><span class="line">*</span><br></pre></td></tr></table></figure>
+
+<h3 id="hugo安装主题"><a href="#hugo安装主题" class="headerlink" title="hugo安装主题"></a>hugo安装主题</h3><p>新建文章后不要着急，还需要安装hugo主题才行。去官方主题列表 <a href="https://themes.gohugo.io" target="_blank" rel="noopener">themes.gohugo.io</a> 里去挑选自己想要的主题。</p>
+<p>我们这里以<code>icarus</code>主题为例来安装主题。Github仓库地址 <a href="https://Github.com/digitalcraftsman/hugo-icarus-theme" target="_blank" rel="noopener">Github.com/digitalcraftsman/hugo-icarus-theme</a></p>
+<p>根据文档<code>clone</code>主题<br>在Hugo站点运行的文件夹中</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd themes</span><br><span class="line">git clone https://Github.com/digitalcraftsman/hugo-icarus-theme.git</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h3><p>找到icarus主题下的<code>hojunBlog\themes\hugo-icarus-theme\exampleSite\config.toml</code>复制其内容到根目录下的<code>hojunBlog\config.toml</code>中，接着修改根目录下的配置文件部分内容如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">baseurl = "https://yourname.Github.io"</span><br><span class="line">languageCode = "en-us"</span><br><span class="line">title = "Icarus"</span><br><span class="line"># Enable comments by entering your Disqus shortname</span><br><span class="line">disqusShortname = "spf13"</span><br><span class="line"># Enable Google Analytics by entering your tracking code</span><br><span class="line">googleAnalytics = ""</span><br><span class="line"># Define the number of posts per page</span><br><span class="line">paginate = 10</span><br><span class="line">footnotereturnlinkcontents = "↩"</span><br><span class="line">theme = "hugo-icarus-theme"</span><br><span class="line"># Comment the themesDir option if you use this theme in production</span><br><span class="line">themesDir = "./themes/"</span><br></pre></td></tr></table></figure>
+
+<p>其中重要的是 <code>baseurl</code> 、<code>theme</code>、<code>themesDir</code>的配置，其他的配置可以之后慢慢设置。baseurl需要改成你的Github pages的仓库名，theme、themesDir改成主题目录名和主题路径（文件夹相对路径）。<br>其他配置可以参考<code>icarus</code>主题的文档，这里就不做介绍了。</p>
+<p>使用命令来预览、发布主题<br>在根目录（比如这里是<code>hojunBlog</code>下）执行：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hugo server</span><br></pre></td></tr></table></figure>
+
+<p>然后打开浏览器，输入<code>localhost:1313</code>就可以看到自己的博客了！（注意之前说的文章里的<code>draft: true</code>要删掉哦）</p>
+<p>接着就是要发布主题到Github上了，注册Github，新建<code>yourname.Github.io</code>的仓库，配置<code>SSH</code>，复制仓库的<code>Github pages</code>地址到之前说的配置的<code>baseurl</code>中(就是yourname.Github.io)，这些步骤不会的可以去百度找教程，这里就不熬述了。</p>
+<p>最后然后使用命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hugo</span><br></pre></td></tr></table></figure>
+
+<p>就可以发布到Github上，通过 <a href="https://yake.tk" target="_blank" rel="noopener">https://yake.tk</a> 访问你的博客了！</p>
+<p>当然如果你有自己域名还可以自定义域名.</p>
+<h3 id="The-End"><a href="#The-End" class="headerlink" title="The End"></a>The End</h3><p>hugo搭建博客教程就到这里了，欢迎大家加入讨论</p>
+<p>注意： 本博客使用 Hexo 制作.</p>
+
+      
+    
+  </section>
+</article>
+
+
+
+<div class="adsense">
+
+  <div>
+  <!-- 横向广告 -->
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8628134120176558" data-ad-slot="8916149064" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+
+</div>
+
+
+
+<div class="comments">
+    <div class="beaudar"></div>
+<script src="https://beaudar.lipk.org/client.js" repo="yakeing/HexoBlog" branch="gh-pages" issue-term="title" theme="github-light" loading="false" crossorigin="anonymous" async>
+</script>
+</div>
+
+
+</div>
+        <footer class="footer">
+    <p>&copy;2021 <i class="icon-heart heart vm"></i> <b>Yakeing</b> | 由 Hexo 强力驱动 | 主题: Concise </p>
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?7655bbc8fe60302eb3ff0108b4652744";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    
+</footer>
+
+    </main>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        var nodes = {
+            nav: $('#nav'),
+            aside: $('#aside'),
+            asideInner: $('#aside-inner'),
+            navInner: $('#nav-inner')
+        };
+
+        var doing = false;
+        nodes.asideInner.on('webkitAnimationEnd mozAnimationEnd oAnimationEnd oanimationend animationend', function() {
+            if (nodes.aside.hasClass('mobile-open')) {
+                nodes.aside.removeClass('mobile-open');
+            } else {
+                nodes.aside.removeClass('mobile-close panel-show');
+            }
+            doing = false;
+        });
+        $('#open-panel, #aside-mask').on('click', function() {
+            if (doing) {
+                return;
+            }
+
+            if (nodes.aside.hasClass('panel-show')) {
+                nodes.aside.addClass('mobile-close');
+            } else {
+                nodes.aside.addClass('mobile-open panel-show');
+            }
+        });
+        $('#open-menus').on('click', function() {
+            nodes.navInner.slideToggle();
+        });
+
+        if (window.innerWidth <= 960) {
+            setTimeout(function() {
+                nodes.navInner.slideUp();
+            }, 3000);
+        }
+    });
+    </script>
+    
+        <script type="text/javascript" src="/js/scrollspy.min.js"></script>
+        <script type="text/javascript">
+        $(document.body).scrollspy({target: '#aside-inner'});
+        </script>
+    
+    <!--单击显示文字-->
+    <script type="text/javascript" src="/js/click_show_text.js"></script>
+</body>
+</html>

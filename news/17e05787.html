@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta name="baidu-site-verification" content="Y3O25eZaLD">
+    <meta charset="UTF-8">
+    <title>Win10将强制删除Flash？教你屏蔽Flash删除补丁 | Yakeing Blog</title>
+    <meta name="author" content="Yakeing">
+    <meta name="version" content="1.0.0">
+    <meta name="keywords" content="网站,程序员,技术">
+    <meta name="description" content="微软早前就已经宣布，将会在今年年底彻底不支持Flash。现在，微软行动起来了。微软做了一个新的Windows 10补丁KB4577586，这个补丁的唯一作用，就是在系统中彻底删除Flash。　　注意，KB4577586一旦安装，是无法卸载的，只能通过系统还原等方法复原。也就是说，如果你安装KB4577586补丁，那么系统就和Flash永别了。　　微软发布了KB4577586补丁用于删除Flash，不过尚未向通过Windows Update推送　　不过，当前微软尚未通过Windows...">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <!-- Referrer Policy -策略- HTTPS降为HTTP请求不发送地址 -->
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <!-- -跨域资源共享- 允许请求域名 有效时间 发送cookie 请求方式 自定义请求头字段 -->
+  <meta name="Access-Control-Allow-Origin" content="*">
+  <meta name="Access-Control-Max-Age" content="1728000">
+  <meta name="Access-Control-Allow-Credentials" content="true">
+  <meta name="Access-Control-Request-Method" content="OPTIONS, GET, PUT, POST, DELETE">
+  <meta name="Access-Control-Allow-Headers" content="x-requested-with, accept, origin, content-type">
+    <link rel="alternate" href="/atom.xml" title="Yakeing Blog" type="application/atom+xml">
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+    <main class="app">
+        <header class="header clearfix">
+    <div id="nav" class="nav">
+    <div class="nav-mobile">
+        <button id="open-panel" class="open-panel nav-mobile-item"><i class="icon-documents"></i></button>
+        <h1 class="nav-mobile-title nav-mobile-item">Yakeing Blog</h1>
+        <button id="open-menus" class="open-panel nav-mobile-item"><i class="icon-library"></i></button>
+    </div>
+
+    <nav id="nav-inner" class="nav-inner">
+        
+            <a class="nav-item" href="/">
+                <span class="nav-text">首页</span>
+            </a>
+        
+            <a class="nav-item" href="/tags">
+                <span class="nav-text">标签</span>
+            </a>
+        
+            <a class="nav-item" href="/categories">
+                <span class="nav-text">分类</span>
+            </a>
+        
+            <a class="nav-item" href="/archives">
+                <span class="nav-text">归档</span>
+            </a>
+        
+            <a class="nav-item" href="/about">
+                <span class="nav-text">关于</span>
+            </a>
+        
+            <a class="nav-item" href="/atom.xml">
+                <span class="nav-text">RSS</span>
+            </a>
+        
+    </nav>
+</div>
+
+    <aside id="aside" class="aside">
+    <div id="aside-mask" class="aside-mask"></div>
+    <div id="aside-inner" class="aside-inner">
+    <!-- %- search_form({button: '<i class="icon-search-stroke"></i>'}) % -->
+    <form action="http://zhannei.baidu.com/cse/site" method="get" target="_blank" accept-charset="UTF-8" class="search-form">
+      <input type="search" name="q" class="search-form-input" placeholder="Search">
+      <button type="submit" class="search-form-submit">
+        <i class="icon-search-stroke"></i>
+      </button>
+      <input type="hidden" name="cc" value="yake.js.org">
+    </form>
+        
+        
+        
+        
+        
+        <div class="author-meta">
+            
+            <div class="author-avatar">
+                <a href="/">
+                    <img src="/images/avatar.jpg" title="Yakeing">
+                </a>
+            </div>
+            
+            <div class="author-name">Yakeing</div>
+            <div class="author-work">Web Developer &amp; Program design</div>
+            <div class="author-location">
+                <i class="icon-location vm"></i>
+                <span class="vm">Guangzhou, Guangdong, China</span>
+            </div>
+            
+            <div class="author-thread-wrap">
+                <div class="author-threads clearfix rotate">
+                    
+                        <a class="thread-item" href="https://github.com/yakeing" target="_blank" rel="noopener noreferrer">
+                        <img src="/svg/github.svg" alt="link">
+                            <!-- %0- incl-ude({- pa-th: lin-k.svg -}) % -->
+                        </a>
+                    
+                        <a class="thread-item" href="https://weibo.com/yakeing" target="_blank" rel="noopener noreferrer">
+                        <img src="/svg/weibo.svg" alt="link">
+                            <!-- %0- incl-ude({- pa-th: lin-k.svg -}) % -->
+                        </a>
+                    
+                        <a class="thread-item" href="https://twitter.com/yakeing" target="_blank" rel="noopener noreferrer">
+                        <img src="/svg/twitter.svg" alt="link">
+                            <!-- %0- incl-ude({- pa-th: lin-k.svg -}) % -->
+                        </a>
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</aside>
+
+</header>
+
+        <div id="content" class="content"><article class="article" itemscope itemprop="blogPost">
+  
+  <header class="article-header">
+    
+    <h1 itemprop="name">
+      Win10将强制删除Flash？教你屏蔽Flash删除补丁
+    </h1>
+    
+    <div class="article-meta clearfix">
+      <a class="article-date" href="https://yake.js.org/news/17e05787.html">
+    
+    <i class="icon-calendar"></i>
+    
+    <time datetime="2020-11-09T10:10:02.000Z" itemprop="datePublished">2020-11-09</time>
+</a>
+
+      
+<div class="article-tag-list">
+    <i class="icon-tag"></i>
+    <a class="article-tag-link" href="/tags/Flash/">Flash</a>, <a class="article-tag-link" href="/tags/Win10/">Win10</a>, <a class="article-tag-link" href="/tags/补丁/">补丁</a>
+</div>
+
+
+    </div>
+  </header>
+  
+  <section class="article-body markdown-body">
+    
+      
+      
+        <p>微软早前就已经宣布，将会在今年年底彻底不支持Flash。现在，微软行动起来了。微软做了一个新的Windows 10补丁KB4577586，这个补丁的唯一作用，就是在系统中彻底删除Flash。</p>
+<p>　　注意，KB4577586一旦安装，是无法卸载的，只能通过系统还原等方法复原。也就是说，如果你安装KB4577586补丁，那么系统就和Flash永别了。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/eead-kcpxnwv3560713.png" alt="img"></p>
+<p>　　微软发布了KB4577586补丁用于删除Flash，不过尚未向通过Windows Update推送</p>
+<p>　　不过，当前微软尚未通过Windows Update推送KB4577586，用户如果想要安装的话，只能通过微软的更新目录下载，下面是详细地址。</p>
+<p>　　KB4577586补丁：https：//<a href="http://www.catalog.update.microsoft.com/Search.aspx？q=KB4577586" target="_blank" rel="noopener">www.catalog.update.microsoft.com/Search.aspx？q=KB4577586</a></p>
+<p>　　如果你想要彻底删除Flash，可以安装这个补丁。但是，总有人还是得用Flash的，现在微软没有推送这补丁，万一以后推送了呢？</p>
+<p>　　只能坐等Flash被强制删除吗？今天就来给大家分享一个屏蔽微软补丁推送的方法，以防日后微软强行推送Flash删除补丁！</p>
+<p>　　这里我们需要用到一款来自微软的工具，名为“Show or hide update”。</p>
+<p>　　Show or hide update官方下载：<a href="http://download.microsoft.com/download/f/2/2/f22d5fdb-59cd-4275-8c95-1be17bf70b21/wushowhide.diagcab" target="_blank" rel="noopener">http://download.microsoft.com/download/f/2/2/f22d5fdb-59cd-4275-8c95-1be17bf70b21/wushowhide.diagcab</a></p>
+<p>　　顾名思义，这是一款用来隐藏补丁的工具。如果你不想系统接收到某个不同，就可以通过它来隐藏。当然，想要重新接受这个补丁的话，也能用它来重新开启接受。</p>
+<p>　　Show ro hide update的使用很简单，下载完成后双击运行即可。在这个界面中，有一个“高级”的选项，里面只有是否自动修复一个选项，保持默认即可。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/402d-kcpxnwv3560712.png" alt="img"></p>
+<p>　　主界面</p>
+<p>　　接下来，这工具会让你选择隐藏更新，或者重新显示隐藏了的更新。这里选择第一个，隐藏更新。如果之后想要重新让Win10推送这个更新，可以再次运行工具，选择第二个重新显示更新的选项。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/c447-kcpxnwv3560728.png" alt="img"></p>
+<p>　　选择“Hide updates”</p>
+<p>　　之后，Show or hide update会罗列出当前系统接收到的、但又尚未安装的更新补丁了。选择你不想要的推送，然后点击下一步即可，此后就不会再接收到这个补丁了。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/08b2-kcpxnwv3560729.png" alt="img"></p>
+<p>　　选择想要隐藏的Windows Update推送选项</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/ba4f-kcpxnwv3560734.png" alt="img"></p>
+<p>　　隐藏后，这个更新就不会再出现在推送中了</p>
+<p>　　当然，目前微软尚未向大家推送KB4577586补丁，所以用这款工具也是没法屏蔽掉它的。但防微杜渐，大家可以先准备好这款工具，当微软真的推送补丁强删Flash时，可以用它来抵挡。</p>
+<p>　　Flash作为落伍于时代的技术，单纯从技术的角度来看，的确已经没有了存在的必要。但各国国情不同，国内仍有一些网页工具未升级换代，需要依赖Flash。如果你的确需要Flash，不妨试试上文的方法吧。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/1929-imztzhp2874195.jpg" alt="img"></p>
+
+      
+    
+  </section>
+</article>
+
+
+
+<div class="adsense">
+
+  <div>
+  <!-- 横向广告 -->
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8628134120176558" data-ad-slot="8916149064" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+
+</div>
+
+
+
+<div class="comments">
+    <div class="beaudar"></div>
+<script src="https://beaudar.lipk.org/client.js" repo="yakeing/HexoBlog" branch="gh-pages" issue-term="title" theme="github-light" loading="false" crossorigin="anonymous" async>
+</script>
+</div>
+
+
+</div>
+        <footer class="footer">
+    <p>&copy;2021 <i class="icon-heart heart vm"></i> <b>Yakeing</b> | 由 Hexo 强力驱动 | 主题: Concise </p>
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?7655bbc8fe60302eb3ff0108b4652744";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    
+</footer>
+
+    </main>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        var nodes = {
+            nav: $('#nav'),
+            aside: $('#aside'),
+            asideInner: $('#aside-inner'),
+            navInner: $('#nav-inner')
+        };
+
+        var doing = false;
+        nodes.asideInner.on('webkitAnimationEnd mozAnimationEnd oAnimationEnd oanimationend animationend', function() {
+            if (nodes.aside.hasClass('mobile-open')) {
+                nodes.aside.removeClass('mobile-open');
+            } else {
+                nodes.aside.removeClass('mobile-close panel-show');
+            }
+            doing = false;
+        });
+        $('#open-panel, #aside-mask').on('click', function() {
+            if (doing) {
+                return;
+            }
+
+            if (nodes.aside.hasClass('panel-show')) {
+                nodes.aside.addClass('mobile-close');
+            } else {
+                nodes.aside.addClass('mobile-open panel-show');
+            }
+        });
+        $('#open-menus').on('click', function() {
+            nodes.navInner.slideToggle();
+        });
+
+        if (window.innerWidth <= 960) {
+            setTimeout(function() {
+                nodes.navInner.slideUp();
+            }, 3000);
+        }
+    });
+    </script>
+    
+        <script type="text/javascript" src="/js/scrollspy.min.js"></script>
+        <script type="text/javascript">
+        $(document.body).scrollspy({target: '#aside-inner'});
+        </script>
+    
+    <!--单击显示文字-->
+    <script type="text/javascript" src="/js/click_show_text.js"></script>
+</body>
+</html>

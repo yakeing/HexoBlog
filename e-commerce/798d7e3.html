@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta name="baidu-site-verification" content="Y3O25eZaLD">
+    <meta charset="UTF-8">
+    <title>蚂蚁做错了什么？ | Yakeing Blog</title>
+    <meta name="author" content="Yakeing">
+    <meta name="version" content="1.0.0">
+    <meta name="keywords" content="网站,程序员,技术">
+    <meta name="description" content="　　撰文 /   仉泽翔 郑亚红　　编辑 /   赵艳秋　　01　　2009年，一张PPT摆在马云面前，上面写着：我们要拿诺贝尔经济学奖和诺贝尔和平奖。　　当时和马云坐在一起的，有蔡崇信，有谢世煌，有曾鸣。尽管都是些见惯大场面的人物，他们看到PPT的时候也都没憋住笑。还是大老板镇静得最快，马云沉吟过后抬头说，两个奖一起拿，太难了，拿一个也行。　　向马云做演讲的人叫胡晓明，4年前从光大银行跳槽到阿里巴巴，在公司金融条线工作。不久前，马云给他出了一道考题：做一家小额贷款公司，给在阿...">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <!-- Referrer Policy -策略- HTTPS降为HTTP请求不发送地址 -->
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <!-- -跨域资源共享- 允许请求域名 有效时间 发送cookie 请求方式 自定义请求头字段 -->
+  <meta name="Access-Control-Allow-Origin" content="*">
+  <meta name="Access-Control-Max-Age" content="1728000">
+  <meta name="Access-Control-Allow-Credentials" content="true">
+  <meta name="Access-Control-Request-Method" content="OPTIONS, GET, PUT, POST, DELETE">
+  <meta name="Access-Control-Allow-Headers" content="x-requested-with, accept, origin, content-type">
+    <link rel="alternate" href="/atom.xml" title="Yakeing Blog" type="application/atom+xml">
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+    <main class="app">
+        <header class="header clearfix">
+    <div id="nav" class="nav">
+    <div class="nav-mobile">
+        <button id="open-panel" class="open-panel nav-mobile-item"><i class="icon-documents"></i></button>
+        <h1 class="nav-mobile-title nav-mobile-item">Yakeing Blog</h1>
+        <button id="open-menus" class="open-panel nav-mobile-item"><i class="icon-library"></i></button>
+    </div>
+
+    <nav id="nav-inner" class="nav-inner">
+        
+            <a class="nav-item" href="/">
+                <span class="nav-text">首页</span>
+            </a>
+        
+            <a class="nav-item" href="/tags">
+                <span class="nav-text">标签</span>
+            </a>
+        
+            <a class="nav-item" href="/categories">
+                <span class="nav-text">分类</span>
+            </a>
+        
+            <a class="nav-item" href="/archives">
+                <span class="nav-text">归档</span>
+            </a>
+        
+            <a class="nav-item" href="/about">
+                <span class="nav-text">关于</span>
+            </a>
+        
+            <a class="nav-item" href="/atom.xml">
+                <span class="nav-text">RSS</span>
+            </a>
+        
+    </nav>
+</div>
+
+    <aside id="aside" class="aside">
+    <div id="aside-mask" class="aside-mask"></div>
+    <div id="aside-inner" class="aside-inner">
+    <!-- %- search_form({button: '<i class="icon-search-stroke"></i>'}) % -->
+    <form action="http://zhannei.baidu.com/cse/site" method="get" target="_blank" accept-charset="UTF-8" class="search-form">
+      <input type="search" name="q" class="search-form-input" placeholder="Search">
+      <button type="submit" class="search-form-submit">
+        <i class="icon-search-stroke"></i>
+      </button>
+      <input type="hidden" name="cc" value="yake.js.org">
+    </form>
+        
+        
+        
+        
+        
+        <div class="author-meta">
+            
+            <div class="author-avatar">
+                <a href="/">
+                    <img src="/images/avatar.jpg" title="Yakeing">
+                </a>
+            </div>
+            
+            <div class="author-name">Yakeing</div>
+            <div class="author-work">Web Developer &amp; Program design</div>
+            <div class="author-location">
+                <i class="icon-location vm"></i>
+                <span class="vm">Guangzhou, Guangdong, China</span>
+            </div>
+            
+            <div class="author-thread-wrap">
+                <div class="author-threads clearfix rotate">
+                    
+                        <a class="thread-item" href="https://github.com/yakeing" target="_blank" rel="noopener noreferrer">
+                        <img src="/svg/github.svg" alt="link">
+                            <!-- %0- incl-ude({- pa-th: lin-k.svg -}) % -->
+                        </a>
+                    
+                        <a class="thread-item" href="https://weibo.com/yakeing" target="_blank" rel="noopener noreferrer">
+                        <img src="/svg/weibo.svg" alt="link">
+                            <!-- %0- incl-ude({- pa-th: lin-k.svg -}) % -->
+                        </a>
+                    
+                        <a class="thread-item" href="https://twitter.com/yakeing" target="_blank" rel="noopener noreferrer">
+                        <img src="/svg/twitter.svg" alt="link">
+                            <!-- %0- incl-ude({- pa-th: lin-k.svg -}) % -->
+                        </a>
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</aside>
+
+</header>
+
+        <div id="content" class="content"><article class="article" itemscope itemprop="blogPost">
+  
+  <header class="article-header">
+    
+    <h1 itemprop="name">
+      蚂蚁做错了什么？
+    </h1>
+    
+    <div class="article-meta clearfix">
+      <a class="article-date" href="https://yake.js.org/e-commerce/798d7e3.html">
+    
+    <i class="icon-calendar"></i>
+    
+    <time datetime="2020-11-09T03:50:02.000Z" itemprop="datePublished">2020-11-09</time>
+</a>
+
+      
+<div class="article-tag-list">
+    <i class="icon-tag"></i>
+    <a class="article-tag-link" href="/tags/余额宝/">余额宝</a>, <a class="article-tag-link" href="/tags/阿里/">阿里</a>
+</div>
+
+
+    </div>
+  </header>
+  
+  <section class="article-body markdown-body">
+    
+      
+      
+        <p><img src="https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/9e00-kcieywa1455951.jpg" alt="img"></p>
+<p>　　撰文 /   仉泽翔 郑亚红</p>
+<p>　　编辑 /   赵艳秋</p>
+<p>　　01</p>
+<p>　　2009年，一张PPT摆在马云面前，上面写着：我们要拿诺贝尔经济学奖和诺贝尔和平奖。</p>
+<p>　　当时和马云坐在一起的，有蔡崇信，有谢世煌，有曾鸣。尽管都是些见惯大场面的人物，他们看到PPT的时候也都没憋住笑。还是大老板镇静得最快，马云沉吟过后抬头说，两个奖一起拿，太难了，拿一个也行。</p>
+<p>　　向马云做演讲的人叫胡晓明，4年前从光大银行跳槽到阿里巴巴，在公司金融条线工作。不久前，马云给他出了一道考题：做一家小额贷款公司，给在阿里巴巴上做生意的商家降低贷款门槛。这个项目被命名为阿里小贷，后来被整合为网商银行，成为蚂蚁集团的四梁八柱之一。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/3017-kcieywa1455985.jpg" alt="img"><br>图/视觉中国（蚂蚁集团CEO胡晓明）</p>
+<p>　　刚刚接了任务的胡晓明，为了找马云要人、要钱、要资源才写出这张PPT。</p>
+<p>　　胡晓明聪明的很，他这张PPT是有典故的。1979年，孟加拉人尤努斯创办格莱珉银行，为无法在传统银行获得贷款的穷人提供小额贷款，在贫困人口众多的孟加拉国实现金融普惠，并因此在2006年获得诺贝尔和平奖。</p>
+<p>　　2009年9月，马云宣布为尤努斯的银行提供500万美元，用以在中国四川和内蒙古复制格莱珉模式。胡晓明在这个节骨眼上放出这张PPT可以说是颇有讲究。</p>
+<p>　　商业逻辑当然不能简单地归因为谁的喜好。阿里小贷诞生的背景是，截至2008年，阿里巴巴的注册会员已达2970万，其中付费的“诚信通会员”已经达到32.7万。在阿里巴巴的信用数据库中，商户的信用记录最高者长达6年。</p>
+<p>　　阿里巴巴用技术在庞大的用户群体中筛选出了一大批信用状况优质、现金流健康却并不宽裕的小微企业主，这让马云和胡晓明看到一个机会，这么多的优质信用数据能否去干点什么呢？阿里小贷的出现已是水到渠成。</p>
+<p>　　中国的民营企业家，不管格局多大，都想做两件事，一个是金融，一个是地产，马云也不能免俗。一位参与阿里金融早期工作的前员工表达的十分坦诚，阿里金融的初心就是想靠金融获利，只不过当年的阿里人创业还是有情怀在的。“虽然我们是放贷的，我们也是有梦想的，可以帮助有需要的人，我们是要拿诺贝尔和平奖的。”</p>
+<p>　　2010年4月，在胡晓明的主导下，阿里巴巴在浙江杭州以6亿元注册资本开设小贷公司，并向其平台上的商家发放贷款。在仅仅两个月的时间里，通过阿里小贷发放的贷款超过260亿元，单日利息超过100万元。2011年，阿里巴巴又在重庆获得另一张小贷牌照。</p>
+<p>　　重庆对于蚂蚁金服来说，无疑是第二故乡。由于当时当地特殊的监管条件，2013年重庆蚂蚁小贷注册资本直接飙至30亿元，并用2倍杠杆向银行贷款约60亿元，形成了90亿元的网上小额贷款。日后，蚂蚁金服的花呗和借呗就是从这90亿元中生长而来。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/541c-kcieywa1456022.jpg" alt="img"><br>图/视觉中国</p>
+<p>　　许多人都记得马云那句“如果银行不改变，我们就去改变银行”，这句诞生于2008年金融危机中的名言，时至今日仍不时被各界人士拿来反复咀嚼。鲜为人知的是，在做小贷之前，阿里金融内部曾有过一个创造一家银行的“一号工程”，和建设银行合作申请一张网络银行牌照。</p>
+<p>　　据曾参与过该项目的阿里巴巴前员工向AI财经社透露，在当年，阿里巴巴是想将阿里小贷、ToB、ToC的整个金融业务全部打包装进这家银行，这可谓是一个很宏大、很超前的目标。</p>
+<p>　　但由于合作双方的分歧越来越大，阿里巴巴与建行在2010年分手，这家银行也就化作泡影。按照当时的监管，民营企业要去申请做一家银行，它需要有一家国有银行背书，所以阿里巴巴做银行这条路暂时行不通。而当时也没有民营银行的牌照政策红利，被叫停也是理所当然。</p>
+<p>　　“一号工程”的失败，无疑对阿里巴巴的金融尝试影响深远，此后阿里巴巴开始在金融市场中单飞。正是在这一阶段，马云先是完成对支付宝的整合，邵晓峰的CEO席位由彭蕾接掌，支付宝也被从阿里巴巴体系中剥离，万亿蚂蚁从这里起步，蚂蚁集团的早期投资人复星系、万向系、银泰系等均在这一阶段开始入局。</p>
+<p>　　2014年10月16日，阿里小微金融服务集团（筹）最终定名蚂蚁金融服务集团。</p>
+<p>　　并不让人意外的是，初露峥嵘的蚂蚁集团就聚集了极大关注度。</p>
+<p>　　2014年春节刚过，成立9个月的余额宝就向外界宣告，募资已超5000亿元，这让余额宝的管理公司天弘基金一举成名。但余额宝的出现让银行家们略显尴尬，余额宝90%的资金是在银行的协议存款，但诸多储户已经开始远离银行，通过余额宝完成储蓄。这意味着，银行一方面需要与阿里巴巴合作，另一方面需要推出同类产品与之对抗。如何监管支付宝、如何监管蚂蚁金服成为金融界一大热门话题。</p>
+<p>　　与此同时，蚂蚁金服又以ABS（基于资产的证券化）对花呗和借呗的资产进行循环融资，即以花呗和借呗所拥有的资产为基础，以带来的预期收益为保证，通过在资本市场发行债券来募集资金。用这种方式，仅仅用了4年时间，蚂蚁金服就吓了监管层一跳。</p>
+<p>　　给马云批复网络小贷的时任重庆市长黄奇帆，曾在《结构性改革》一书中称，（蚂蚁）与重庆的金融监管要求、国家银监会的监管要求基本吻合，问题出在 ABS 发行上。由于证监会没有规定 ABS 贷款资产可以循环多少次，凡是一个贷款余额拿到证券市场交易所发的ABS 债券，就可以循环发放贷款，往往几年里这样循环了40次，造成了30多亿元发放 3000多亿元网上小贷，形成上百倍的高杠杆。</p>
+<p>　　2017年初，央行、银监会和证监会整顿资管业务，在调查蚂蚁集团时发现，蚂蚁两家小贷公司的杠杆率已经达到100倍左右，到2017年6月，借呗的贷款余额达到1659.85亿元，花呗的贷款余额达到992.09亿，合计约2652亿元，早已超过重庆市监管部门要求的2.3倍杠杆率要求。</p>
+<p>　　对此，监管层要求，ABS发行次数上限最多为5次。此后，蚂蚁集团制定开放平台战略，向银行进行技术输出，提供风控、贷款管理、催收等业务，还向银行收取一笔服务费。招股书显示，截至2020年6月30日，蚂蚁集团促成消费信贷高达1.73万亿，比当年的100倍杠杆率不知道高到哪里去了。</p>
+<p>　　02</p>
+<p>　　普通老百姓恐怕都没想到，蚂蚁常对外宣传的先进微贷模式和普惠服务，在其上市前夕成为监管和舆论“声讨”的靶子。</p>
+<p>　　实际上，马云与监管最近一轮博弈从10月24日，他在外滩金融峰会的讲话宣告开始。当时他发表一番慷慨动情的演讲：“中国有很多大银行，更像是大江大河和血液的动脉，但是我们今天更需要湖泊、需要水塘、需要小溪小河”，“今天的银行延续的还是当铺思想，抵押和担保就是当铺”。意在呼吁监管机构要更加开放创新。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/5add-kcieywa1456060.jpg" alt="img"><br>图/视频截图（马云外滩金融峰会讲话）</p>
+<p>　　随后，多家央媒、金融业重要人物撰文似乎隔空回应马云的呼号，比如《证券时报》就表示，“风控能力，不仅是银行的命门，也是当铺、乃至蚂蚁的命门。要保护好这个命门，除了各自修炼高招外，显然还需要借助监管的外力约束”。</p>
+<p>　　11月2日，这场博弈达到真正的顶峰。当天先是马云、井贤栋和胡晓明三位蚂蚁集团的核心人物被四大机构监管约谈，随即晚上银保监会会同中国人民银行发布《网络小额贷款业务管理暂行办法（征求意见稿）》（下文简称为《办法》）。</p>
+<p>　　尽管《办法》并不只针对蚂蚁，但与约谈搭配在一起的这套组合拳，还是有相当大的指向性。《办法》的发布清晰表明，蚂蚁小贷迎来了严监管的元年。《办法》中对网络小贷业务行政范围、注册资本等进行了重新的界定，揭开了蚂蚁一直以来高利润永动机的秘密，也是必须要解决的问题：</p>
+<p>　　其一是，新规规定，小贷跨省业务将归银保监会直接审批。这就意味着，在全国开展业务的蚂蚁，不再是地方监管局监管，监管门槛全面提升。</p>
+<p>　　其二是，个人单户网络小贷余额原则上不得超过30万元，不得超过其最近3年年均收入的三分之一；对法人或其他单户网络小贷余额原则上不得超过100万元。</p>
+<p>　　小贷业务受众群体一般来说是银行的长尾客户，他们通常被银行的风控系统剔除在外。该条款的直接影响是，将限制蚂蚁放贷的规模，因此也限制了放贷的收入。</p>
+<p>　　其三是，严格限制了互联网小贷公司的杠杆率。在单笔联合贷款中，经营网络小额贷款业务的小额贷款公司的出资比例不得低于30%。</p>
+<p>　　这可能是对蚂蚁打击最大的条款之一，外界认为将直接压低蚂蚁估值和未来想象空间。</p>
+<p>　　此前，蚂蚁小贷最大的杠杆和利润点就是来自于与银行的联合贷款，而蚂蚁在联合贷款中的出资比例只有1%-2%，其他来自银行的低息资金，正因此它，蚂蚁通过360亿元表内资产撬动了1.8万亿元的联合贷款。</p>
+<p>　　如果将蚂蚁出资比例提高到新规的30%，这就意味着同样撬动1.8万亿元联合贷款，蚂蚁至少需要5400亿元的表内贷款，外加1700亿元ABS，总计需要放款7100亿元。</p>
+<p>　　而根据表内贷款最多5倍杠杆的原则，蚂蚁小贷资本金也需要扩充到1400亿元规模，而当前蚂蚁的资本金是350亿元左右。随着贷款业务规模不断扩张，蚂蚁就需要不断的增加资本金，这就像一个不断要往里投入的无底洞。蚂蚁也将会从现在躺着赚钱，可能要变成跪着赚钱了。</p>
+<p>　　小微金融行业人士嵇少锋认为，此前蚂蚁通过助贷、联合贷等绕过监管对其杠杆率的限制，甚至可以宣称自己不是做金融，不应该受老迈的巴塞尔协议的约束，从而给自己在资本市场的估值以无限可能。“而限制助贷、联合贷款的规定，则彻底把重金融的金融科技从神坛上拉下马。”</p>
+<p>　　此前，蚂蚁A股发行价确定为每股68.8元，对应2019年扣非净利润市盈率为96.48倍，对比当下大多数银行不足10倍的平均市盈率，高出10倍以上。新规限制了蚂蚁金融杠杆的想象空间后，仅靠向银行输出客户及风控科技，蚂蚁很难维持目前的估值。</p>
+<p>　　《办法》的出台可以说是“来得早，不如来得巧”。有金融业人士分析认为，相关监管文件不可能是一夜制定的，应该在更早之前就已经在酝酿，而像蚂蚁这样的金融巨头也必然是早早知晓甚至参与其中。</p>
+<p>　　在这个逻辑之下，再回看马云在外滩金融峰会上的发言，就不仅仅是“马云飘了”那么简单。业内人士推测，马云当时大批国内金融体系的言论更像是大致了解相关监管文件可能要在近期推出后，向监管部门进行喊话和“讨价还价”。</p>
+<p>　　但马云可能没料到的是，舆论从一开始为他点赞不久就急转直下，也由此展开了一场全民重新认识蚂蚁的普及大课堂。</p>
+<p>　　重新走入上市的“正轨”前，蚂蚁必须要解决监管问题，以及回答大众对它的疑问。</p>
+<p>　　IPO前夕，蚂蚁进行了一番改名，将蚂蚁金服改为蚂蚁科技集团，意在削弱金融属性，强调科技属性。尽管如此，翻开蚂蚁的招股书，可明确看到为蚂蚁贡献了最大营收的业务是微贷科技平台，占比39.41%，而其贡献的利润更是占总利润的47.8%。</p>
+<p>　　从财务数据上来看，蚂蚁仍然是一家金融属性强烈的公司。而再仔细剖析这些数据，在蚂蚁2.15万亿元的信贷大池子里，其中经营贷余额是0.42万亿元，剩下的是1.73万亿元都是消费贷余额。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/abfc-kcieywa1456091.jpg" alt="img"><br>图/视觉中国</p>
+<p>　　而更为惊人的是，这些消费贷平均年化利率为15%，紧紧挨着最高法对民间借贷最高年化利率15.4%的红线。一个网友从另一个角度计算了一个数字：以借呗日息在万分之五左右来算，年化率=0.0005x30x12=0.18=18%，比银行贷款年利率9%高出一倍。他觉得：“万分之五的日息只是给了人一种利息很低的错觉。”</p>
+<p>　　银保监会消费者权益保局局长郭武平在撰文中也称：在收费方面，金融科技公司缺乏统一标准，一般高于持牌金融机构。比如“花呗”与银行信用卡业务基本相同，但分期手续费高于银行，与其普惠金融理念不符，实际上是“普而不惠”。</p>
+<p>　　原央行行长周小川则表达了自己担忧，称一些年轻人过多地靠借债过度消费、奢侈消费。</p>
+<p>　　在这场监管嬗变之前，蚂蚁对花呗、借呗两款产品引以为傲，在上海地铁站铺设的广告牌里，其中的文案是这样写的：一家三口的日子再精打细算，女儿的生日也要过得像模像样，施工队队长37岁，用花呗给女儿过生日。</p>
+<p>　　广告在铺设之初就遭到了吐槽，有人称：看了全身不适，鼓动穷人和年轻人提前消费，这样真的好吗？随着监管消息的发布和上市暂缓，这些广告灯牌一夜间被拆除。</p>
+<p>　　一位人士告诉AI财经社，在她看来，蚂蚁暂缓上市，根据监管环境适当做出调整，在短期来看对蚂蚁似乎不是好事，但长期来看是向好的。她认为，蚂蚁的身份不再模糊，而是统一受到金融系统的监管，可以更加光明正大地搞金融。也有人士认为，此次新规对互联网金融后起之秀设定了高门槛，在一定程度上也有利于蚂蚁等形成一定盘子的早期入局者，只要蚂蚁整改到位，优势仍然明显。</p>
+<p>　　11月3日晚间，针对两市暂缓上市，有报道称，蚂蚁集团董事长井贤栋连夜组织召开中高层会议，会议上提及，“暂缓”之后，保守估计蚂蚁重新上市的时间将被推迟半年左右。有与会人士称，井贤栋向参会人员解释，监管主要是征求意见，蚂蚁需要尽快满足征求意见中涉及的具体要求。井贤栋还表示，此次蚂蚁打新的资金会退给投资人，包括战略投资者和散户投资者。</p>
+<p>　　蚂蚁集团也回应称，”稳妥创新、拥抱监管、服务实体、开放共赢，会让蚂蚁集团经得起考验和信任”。</p>
+<p>　　暂缓上市的消息传来后，有网友戏称：一夜之间，听到了蚂蚁金服财富自由破碎的声音。尚不能统计该消息砸碎了多少人的梦，但可以确定的是，上海地铁里花呗的灯箱广告已经暗灭，这或许在某种程度上也意味着，蚂蚁确实要进行一次由内到外的自我调整和检视，让科技回归科技，让金融回归监管。</p>
+
+      
+    
+  </section>
+</article>
+
+
+
+<div class="adsense">
+
+  <div>
+  <!-- 横向广告 -->
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8628134120176558" data-ad-slot="8916149064" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+
+</div>
+
+
+
+<div class="comments">
+    <div class="beaudar"></div>
+<script src="https://beaudar.lipk.org/client.js" repo="yakeing/HexoBlog" branch="gh-pages" issue-term="title" theme="github-light" loading="false" crossorigin="anonymous" async>
+</script>
+</div>
+
+
+</div>
+        <footer class="footer">
+    <p>&copy;2021 <i class="icon-heart heart vm"></i> <b>Yakeing</b> | 由 Hexo 强力驱动 | 主题: Concise </p>
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?7655bbc8fe60302eb3ff0108b4652744";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    
+</footer>
+
+    </main>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        var nodes = {
+            nav: $('#nav'),
+            aside: $('#aside'),
+            asideInner: $('#aside-inner'),
+            navInner: $('#nav-inner')
+        };
+
+        var doing = false;
+        nodes.asideInner.on('webkitAnimationEnd mozAnimationEnd oAnimationEnd oanimationend animationend', function() {
+            if (nodes.aside.hasClass('mobile-open')) {
+                nodes.aside.removeClass('mobile-open');
+            } else {
+                nodes.aside.removeClass('mobile-close panel-show');
+            }
+            doing = false;
+        });
+        $('#open-panel, #aside-mask').on('click', function() {
+            if (doing) {
+                return;
+            }
+
+            if (nodes.aside.hasClass('panel-show')) {
+                nodes.aside.addClass('mobile-close');
+            } else {
+                nodes.aside.addClass('mobile-open panel-show');
+            }
+        });
+        $('#open-menus').on('click', function() {
+            nodes.navInner.slideToggle();
+        });
+
+        if (window.innerWidth <= 960) {
+            setTimeout(function() {
+                nodes.navInner.slideUp();
+            }, 3000);
+        }
+    });
+    </script>
+    
+        <script type="text/javascript" src="/js/scrollspy.min.js"></script>
+        <script type="text/javascript">
+        $(document.body).scrollspy({target: '#aside-inner'});
+        </script>
+    
+    <!--单击显示文字-->
+    <script type="text/javascript" src="/js/click_show_text.js"></script>
+</body>
+</html>

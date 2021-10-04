@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta name="baidu-site-verification" content="Y3O25eZaLD">
+    <meta charset="UTF-8">
+    <title>手机混用闪存到底是真是假？教你查手机闪存型号 | Yakeing Blog</title>
+    <meta name="author" content="Yakeing">
+    <meta name="version" content="1.0.0">
+    <meta name="keywords" content="网站,程序员,技术">
+    <meta name="description" content="最近，网上传言某手机混用闪存，将UFS 3.0和UFS 3.1的闪存混用在了同一型号的机器上，买不同容量的手机，闪存协议不一样。光从这个描述来看，这做法相当不厚道，消费者买手机等于抽奖。但这到底是不是真的？很多朋友也只是有所耳闻，但却不知道如何验证。今天，就给大家分享一些方法。　　方法一：拨号面板输入指令查询　　这是适用于部分ROM的方法，例如某些版本的MIUI、EMUI等ROM就可以使用。在拨号界面中，输入“##284##”，系统就会开始生成Debug报告，等待Debug报告生成完毕...">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <!-- Referrer Policy -策略- HTTPS降为HTTP请求不发送地址 -->
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <!-- -跨域资源共享- 允许请求域名 有效时间 发送cookie 请求方式 自定义请求头字段 -->
+  <meta name="Access-Control-Allow-Origin" content="*">
+  <meta name="Access-Control-Max-Age" content="1728000">
+  <meta name="Access-Control-Allow-Credentials" content="true">
+  <meta name="Access-Control-Request-Method" content="OPTIONS, GET, PUT, POST, DELETE">
+  <meta name="Access-Control-Allow-Headers" content="x-requested-with, accept, origin, content-type">
+    <link rel="alternate" href="/atom.xml" title="Yakeing Blog" type="application/atom+xml">
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+    <main class="app">
+        <header class="header clearfix">
+    <div id="nav" class="nav">
+    <div class="nav-mobile">
+        <button id="open-panel" class="open-panel nav-mobile-item"><i class="icon-documents"></i></button>
+        <h1 class="nav-mobile-title nav-mobile-item">Yakeing Blog</h1>
+        <button id="open-menus" class="open-panel nav-mobile-item"><i class="icon-library"></i></button>
+    </div>
+
+    <nav id="nav-inner" class="nav-inner">
+        
+            <a class="nav-item" href="/">
+                <span class="nav-text">首页</span>
+            </a>
+        
+            <a class="nav-item" href="/tags">
+                <span class="nav-text">标签</span>
+            </a>
+        
+            <a class="nav-item" href="/categories">
+                <span class="nav-text">分类</span>
+            </a>
+        
+            <a class="nav-item" href="/archives">
+                <span class="nav-text">归档</span>
+            </a>
+        
+            <a class="nav-item" href="/about">
+                <span class="nav-text">关于</span>
+            </a>
+        
+            <a class="nav-item" href="/atom.xml">
+                <span class="nav-text">RSS</span>
+            </a>
+        
+    </nav>
+</div>
+
+    <aside id="aside" class="aside">
+    <div id="aside-mask" class="aside-mask"></div>
+    <div id="aside-inner" class="aside-inner">
+    <!-- %- search_form({button: '<i class="icon-search-stroke"></i>'}) % -->
+    <form action="http://zhannei.baidu.com/cse/site" method="get" target="_blank" accept-charset="UTF-8" class="search-form">
+      <input type="search" name="q" class="search-form-input" placeholder="Search">
+      <button type="submit" class="search-form-submit">
+        <i class="icon-search-stroke"></i>
+      </button>
+      <input type="hidden" name="cc" value="yake.js.org">
+    </form>
+        
+        
+        
+        
+        
+        <div class="author-meta">
+            
+            <div class="author-avatar">
+                <a href="/">
+                    <img src="/images/avatar.jpg" title="Yakeing">
+                </a>
+            </div>
+            
+            <div class="author-name">Yakeing</div>
+            <div class="author-work">Web Developer &amp; Program design</div>
+            <div class="author-location">
+                <i class="icon-location vm"></i>
+                <span class="vm">Guangzhou, Guangdong, China</span>
+            </div>
+            
+            <div class="author-thread-wrap">
+                <div class="author-threads clearfix rotate">
+                    
+                        <a class="thread-item" href="https://github.com/yakeing" target="_blank" rel="noopener noreferrer">
+                        <img src="/svg/github.svg" alt="link">
+                            <!-- %0- incl-ude({- pa-th: lin-k.svg -}) % -->
+                        </a>
+                    
+                        <a class="thread-item" href="https://weibo.com/yakeing" target="_blank" rel="noopener noreferrer">
+                        <img src="/svg/weibo.svg" alt="link">
+                            <!-- %0- incl-ude({- pa-th: lin-k.svg -}) % -->
+                        </a>
+                    
+                        <a class="thread-item" href="https://twitter.com/yakeing" target="_blank" rel="noopener noreferrer">
+                        <img src="/svg/twitter.svg" alt="link">
+                            <!-- %0- incl-ude({- pa-th: lin-k.svg -}) % -->
+                        </a>
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</aside>
+
+</header>
+
+        <div id="content" class="content"><article class="article" itemscope itemprop="blogPost">
+  
+  <header class="article-header">
+    
+    <h1 itemprop="name">
+      手机混用闪存到底是真是假？教你查手机闪存型号
+    </h1>
+    
+    <div class="article-meta clearfix">
+      <a class="article-date" href="https://yake.js.org/phone/d190a00a.html">
+    
+    <i class="icon-calendar"></i>
+    
+    <time datetime="2020-11-08T10:25:32.000Z" itemprop="datePublished">2020-11-08</time>
+</a>
+
+      
+<div class="article-tag-list">
+    <i class="icon-tag"></i>
+    <a class="article-tag-link" href="/tags/闪存/">闪存</a>
+</div>
+
+
+    </div>
+  </header>
+  
+  <section class="article-body markdown-body">
+    
+      
+      
+        <p>最近，网上传言某手机混用闪存，将UFS 3.0和UFS 3.1的闪存混用在了同一型号的机器上，买不同容量的手机，闪存协议不一样。光从这个描述来看，这做法相当不厚道，消费者买手机等于抽奖。但这到底是不是真的？很多朋友也只是有所耳闻，但却不知道如何验证。今天，就给大家分享一些方法。</p>
+<p>　　方法一：拨号面板输入指令查询</p>
+<p>　　这是适用于部分ROM的方法，例如某些版本的MIUI、EMUI等ROM就可以使用。在拨号界面中，输入“<em>#</em>#284#<em>#</em>”，系统就会开始生成Debug报告，等待Debug报告生成完毕，整个过程应该不到一分钟。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/04c4-kcpxnwv7039431.jpg" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/75e4-kcpxnwv7039432.jpg" alt="img"></p>
+<p>　　输入<em>#</em>#284#<em>#</em></p>
+<p>　　这个Debug报告包含很多文件，以MIUI为例，这些文件处于手机内部存储的“MIUI\debug_log”目录下。开启这个目录，找到“bugreport-日期时间”文件名格式的zip包，开启这个zip包。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/af44-kcpxnwv7039500.png" alt="img"></p>
+<p>　　MIUI中的Debug报告</p>
+<p>　　在这个zip包当中，还包含着另一个zip包，它的文件名是“bugreport-设备名-安卓版本-日期时间”。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/6832-kcpxnwv7039501.png" alt="img"></p>
+<p>　　其中的bugreport压缩包</p>
+<p>　　打开这个zip包，里面有一个和这个zip包同名的txt文件，开启即可。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/c014-kcpxnwv7039532.png" alt="img"></p>
+<p>　　开启这个txt文件</p>
+<p>　　这个txt文件中，搜索“ffu”的字串，很容易就可以找到闪存型号的信息。例如笔者手中的这部手机，它的闪存型号是“KLUCG4J1ED-B0C1”，制造商是三星。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/f610-kcpxnwv7039533.png" alt="img"></p>
+<p>　　其中可以找到闪存具体型号</p>
+<p>　　方法二：系统Bugreport查询</p>
+<p>　　这个方法适用于大部分的安卓手机。首先，需要开启安卓机的开发者选项，在设置菜单的系统信息界面，不断点击“版本号”即可开启。</p>
+<p>　　接着，设置界面就多了“开发者模式”的选项，这个选项通常位于“系统”下。进入开发者选项，可以看到“错误报告”的功能，点击后，选择生成报告。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/30c3-kcpxnwv7039550.jpg" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/81be-kcpxnwv7039551.jpg" alt="img"></p>
+<p>　　开发者模式下生成bugreport</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/0e1a-kcpxnwv7039555.jpg" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/d987-kcpxnwv7039556.jpg" alt="img"></p>
+<p>将bugreport保存到存储空间，或者发送到其他地方</p>
+<p>　　等待一段时间后，系统通知栏就会弹出“已获取错误报告”的信息。点开它，看到了警告信息后，将它保存到系统目录当中。错误报告是一个文件名为“bugreport-设备名-安卓版本-日期时间”的zip包</p>
+<p>　　接下来的操作就和方法一差不多了。在这个zip包里面，找到同名的txt文件，然后在其中搜索“ffu”，就能找到闪存型号。</p>
+<p>　　但也要注意，现在某些厂商默认并不将闪存的相关信息写入Bugreport当中，或者是搜索的关键词不同（例如有的手机要搜“ufs_product_name”），这需要大家亲自尝试了。</p>
+<p>　　方法三：终端命令行查询</p>
+<p>　　安卓系统基于Linux内核，因此想要确认安卓机的一些信息，也可以通过Linux中常用的终端来进行。</p>
+<p>　　首先下载安装一个终端App，这类App非常丰富，这里就不特别提供了，大家可以自行搜寻安装。</p>
+<p>　　在终端中输入以下命令行：</p>
+<p>　　cat/proc/scsi/scsi</p>
+<p>　　之后，终端就会呈现出闪存的制造商、具体型号等信息了。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/c1df-kcpxnwv7039561.png" alt="img"></p>
+<p>　　在终端，输入命令行也可以查看到闪存具体型号</p>
+<p>　　不过，这个方法并非什么机器都可以用，某些厂家已经屏蔽了相关信息的调用，就算输入命令也不会返回任何信息，这就看不到闪存型号的信息了。</p>
+<p>　　某手机真的混用UFS 3.0和UFS 3.1闪存了吗？</p>
+<p>　　找到了闪存型号后，要确认对应规格就很容易了，直接通过搜索引擎，或者制造商的官网查找即可。</p>
+<p>　　这次某些朋友是买到了某手机的256G容量的型号，因为闪存跑分略低，被怀疑是UFS 3.0，和宣传的UFS 3.1不符。据了解，对应的闪存型号为“SDINFDK4-256G”，我们就以它为例子，来鉴定一下到底这是什么闪存规格。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/c23f-kcpxnwv7039562.jpg" alt="img"></p>
+<p>　　网络上受争议的某手机256G版闪存型号</p>
+<p>　　从搜索引擎中，很容易就找到了该闪存的官方规格文件，这里把链接也提供给大家。</p>
+<p>　　西数/闪迪闪存规格文件：https：//documents.westerndigital.com/content/dam/doc-library/en_us/assets/public/western-digital/product/embedded-flash/brochure/brochure-western-digital-eis-mobile.pdf</p>
+<p>　　从文件中，很容易就找到了“SDINFDK4-256G”的对应规格。可见这就是UFS 3.1的闪存，宣传并没有错谬。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yakeing/Documentation@main/Hexo/images/badd-kcpxnwv7039570.png" alt="img"></p>
+<p>　　其实是货真价实的UFS 3.1</p>
+<p>　　至于和128G版本的性能差异，是由于闪存的性能不仅仅和协议有关，NAND也是重要的决定因素——正如同样是PCIe 4.0的SSD，不同型号性能也有高下之分。</p>
+<p>　　总结</p>
+<p>　　总的来说，作为手机中的重要部件，闪存的确很大程度上决定了手机的体验。如果你对闪存信号有疑惑，不妨试试上文的方法，相信可以帮到大家。</p>
+
+      
+    
+  </section>
+</article>
+
+
+
+<div class="adsense">
+
+  <div>
+  <!-- 横向广告 -->
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8628134120176558" data-ad-slot="8916149064" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+
+</div>
+
+
+
+<div class="comments">
+    <div class="beaudar"></div>
+<script src="https://beaudar.lipk.org/client.js" repo="yakeing/HexoBlog" branch="gh-pages" issue-term="title" theme="github-light" loading="false" crossorigin="anonymous" async>
+</script>
+</div>
+
+
+</div>
+        <footer class="footer">
+    <p>&copy;2021 <i class="icon-heart heart vm"></i> <b>Yakeing</b> | 由 Hexo 强力驱动 | 主题: Concise </p>
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?7655bbc8fe60302eb3ff0108b4652744";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    
+</footer>
+
+    </main>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        var nodes = {
+            nav: $('#nav'),
+            aside: $('#aside'),
+            asideInner: $('#aside-inner'),
+            navInner: $('#nav-inner')
+        };
+
+        var doing = false;
+        nodes.asideInner.on('webkitAnimationEnd mozAnimationEnd oAnimationEnd oanimationend animationend', function() {
+            if (nodes.aside.hasClass('mobile-open')) {
+                nodes.aside.removeClass('mobile-open');
+            } else {
+                nodes.aside.removeClass('mobile-close panel-show');
+            }
+            doing = false;
+        });
+        $('#open-panel, #aside-mask').on('click', function() {
+            if (doing) {
+                return;
+            }
+
+            if (nodes.aside.hasClass('panel-show')) {
+                nodes.aside.addClass('mobile-close');
+            } else {
+                nodes.aside.addClass('mobile-open panel-show');
+            }
+        });
+        $('#open-menus').on('click', function() {
+            nodes.navInner.slideToggle();
+        });
+
+        if (window.innerWidth <= 960) {
+            setTimeout(function() {
+                nodes.navInner.slideUp();
+            }, 3000);
+        }
+    });
+    </script>
+    
+        <script type="text/javascript" src="/js/scrollspy.min.js"></script>
+        <script type="text/javascript">
+        $(document.body).scrollspy({target: '#aside-inner'});
+        </script>
+    
+    <!--单击显示文字-->
+    <script type="text/javascript" src="/js/click_show_text.js"></script>
+</body>
+</html>
