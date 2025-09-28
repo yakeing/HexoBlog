@@ -15,7 +15,7 @@ It 's my new attempt, so I hope all of you will support this blog.
 
 ## 赞助
 
-![Sponsor](https://oauth.applinzi.com/State/heart/Sponsor/EA4AAA.svg)
+![Sponsor](https://badge.eu.org/static/Sponsor/f6f8fa?icon=heart&iconcolor=ea4aaa&stroke=d1d9e0&textcolor=555)
 
 如果如果觉得文章的内容对你有所帮助就请给点赞助我们能对文章有持续更新能力!
 
@@ -73,6 +73,6 @@ It 's my new attempt, so I hope all of you will support this blog.
 
 ### 关于作者
 
-weibo: [yakeing](https://weibo.com/yakeing)
+github: [yakeing](https://github.com/yakeing)
 
 twitter: [yakeing](https://twitter.com/yakeing)
